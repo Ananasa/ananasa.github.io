@@ -1,0 +1,322 @@
+/*
+* Style
+*/
+
+
+/*
+* Google font
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600");
+
+
+/*
+* Section - Home
+*/
+
+#home {
+    height: 100%;
+    position: relative;
+}
+#home .container {
+    position: relative;
+    z-index: 20;
+}
+@media (min-width: 992px) {
+    #home {
+        height: calc(100% - 65px);
+    }
+}
+
+/** BG Default */
+#home.home-bg-static {
+    background-image: url("../images/bg-home-1.jpg");
+}
+
+/** BG Parallax */
+#home.home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-home-parallax.jpg");
+}
+
+/** BG Slider */
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+
+/** BG Slideshow */
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+
+
+/*
+* Section - Profile
+*/
+
+.col-profile {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+@media (min-width: 768px) {
+    .col-profile {
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+}
+@media (min-width: 992px) {
+    .col-profile {
+        padding-bottom: 130px;
+        padding-top: 130px;
+    }
+}
+
+
+/*
+* Section - Services
+*/
+
+#services .border-bottom {
+    border-bottom-style: dashed !important;
+}
+
+
+/*
+* Section - Strengths
+*/
+
+#strengths {
+    background-image: url("../images/bg-strengths.jpg");
+}
+
+
+/*
+* Section - References
+*/
+
+#references {
+    background-image: url("../images/bg-references.jpg");
+}
+
+
+/*
+* Section - Accolades
+*/
+
+.accolades > .item {
+    margin-top: 25px;
+    position: relative;
+}
+.accolades > .item:before {
+    border-left: 1px dashed #a1a1a1;
+    content: '';
+    display: block;
+    height: calc(100% + 25px);
+    left: 30px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+.accolades > .item:first-child {
+    margin-top: 0;
+}
+.accolades > .item:last-child:before {
+    display: none;
+}
+.accolades > .item:last-child > .item-content {
+    border: 0;
+}
+.accolades > .item > i {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.accolades > .item > .item-content {
+    border-bottom: 1px dashed #a1a1a1;
+    margin-left: 94px;
+    padding-bottom: 25px;
+}
+
+
+/*
+* Section - Milestones
+*/
+
+#milestones {
+    background-image: url("../images/bg-milestones.jpg");
+}
+
+
+/*
+* Section - Work Process
+*/
+
+.work-process > .item {
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+.work-process > .item:last-child > .item-content:after {
+    display: none;
+}
+.work-process > .item > .item-content {
+    height: 102px;
+    margin-top: 102px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.work-process > .item > .item-content.mt-0:after {
+    top: 50%;
+}
+.work-process > .item > .item-content.mt-0 > .icon-arrow {
+    left: auto;
+    margin-right: -32px;
+    right: 0;
+}
+.work-process > .item > .item-content:before,
+.work-process > .item > .item-content:after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+}
+.work-process > .item > .item-content:before {
+    border-top: 1px solid #a1a1a1;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    width: 100%;
+}
+.work-process > .item > .item-content:after {
+    border-right: 1px dashed #a1a1a1;
+    height: 100%;
+    right: 0;
+    top: -50%;
+    width: 1px;
+}
+.work-process > .item > .item-content > .icon-block {
+    display: block;
+    height: 66px;
+    left: 50%;
+    line-height: 66px !important;
+    margin-left: -43px;
+    margin-top: -33px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 86px;
+    z-index: 20;
+}
+.work-process > .item > .item-content > .icon-arrow {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -44px;
+    margin-left: -32px;
+    position: absolute;
+    z-index: 20;
+}
+.work-process > .item > .item-content > .dot {
+    border-radius: 25%;
+    content: '';
+    height: 8px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    z-index: 10;
+}
+.work-process > .item > .item-content > .dot.dot-start {
+    left: 0;
+}
+.work-process > .item > .item-content > .dot.dot-end {
+    right: 0;
+}
+@media (max-width: 767px) {
+    .work-process > .item:last-child > .item-content.mt-0 > .dot.dot-end {
+        left: auto;
+        right: 0;
+    }
+    .work-process > .item:last-child > .item-content > .dot.dot-end {
+        left: 0;
+    }
+    .work-process > .item > .item-content {
+        margin: 0 auto;
+        width: 200px;
+    }
+    .work-process > .item > .item-content.mt-0:after {
+        left: auto;
+        right: 0;
+        top: 50%;
+    }
+    .work-process > .item > .item-content:after {
+        height: calc(100% + 24px);
+        left: 0;
+        top: 50%;
+    }
+    .work-process > .item > .item-content > .icon-arrow.icon-Up-3 {
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@media (min-width: 768px) {
+    .work-process > .item > .item-content.mt-0 > .icon-arrow {
+        bottom: 0;
+        margin-bottom: -32px;
+        top: auto;
+    }
+    .work-process > .item > .item-content > .icon-arrow {
+        left: auto;
+        margin-right: -32px;
+        margin-top: -32px;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/*
+* Map
+*/
+
+#gmap {
+    height: 400px;
+    position: relative;
+    width: 100%;
+}
+
+
+/*
+* Footer
+*/
+
+footer {
+    padding: 130px 0;
+}
+footer ul > li:not(:last-child) {
+    margin-right: 10px !important;
+}
+footer ul > li a {
+    display: block;
+    height: 48px;
+    text-align: center;
+    width: 48px;
+}
+footer ul > li a:hover i {
+    opacity: 0.9;
+}
+footer ul > li a i {
+    line-height: 48px !important;
+    opacity: 0.7;
+}
